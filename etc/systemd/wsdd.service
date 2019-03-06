@@ -1,12 +1,11 @@
 [Unit]
-Description=Web Services Dynamic Discovery host daemon
-After=network.target
+Description=Web Services on Devices (WSD) daemon
+BindsTo=smbd.service
 
 [Service]
-Type=simple
-ExecStart=/usr/bin/wsdd
-User=nobody
-Group=nobody
+ExecStart=/usr/sbin/wsdd.py
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target

@@ -1,0 +1,2 @@
+src/wsdd.py usr/sbin/
+etc/systemd/wsdd.service /lib/systemd/system
