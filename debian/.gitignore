@@ -1,0 +1,7 @@
+/wsdd/
+/.debhelper/
+/files
+/*.debhelper.log
+/*.debhelper
+/*.substvars
+/*-stamp

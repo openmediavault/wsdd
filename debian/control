@@ -1,0 +1,17 @@
+Source: wsdd
+Section: net
+Priority: optional
+Maintainer: Volker Theile <volker.theile@openmediavault.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.4
+
+Package: wsdd
+Architecture: all
+Depends: ${misc:Depends}
+Description: Web Services on Devices (WSD) daemon
+ Web Services on Devices (WSD) is a Microsoft API to simplify programming
+ connections to web service enabled devices, such as Printers, Scanners
+ and File Shares.
+ .
+ This daemon advertises and responds to probe requests from Windows
+ clients looking for File Shares.
