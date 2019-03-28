@@ -1,3 +1,9 @@
+wsdd (0.3-2) stable; urgency=low
+
+    * Rebase to latest upstream version.
+
+ -- Volker Theile <volker.theile@openmediavault.org>  Thu, 28 Mar 2019 12:12:09 +0100
+
 wsdd (0.3-1) stable; urgency=low
 
   * Initial release.
