@@ -1,0 +1,15 @@
+[Unit]
+Description=Web Services on Devices (WSD) daemon
+; If the unit bound to is stopped, this unit will be stopped too.
+BindsTo=smbd.service
+
+[Service]
+EnvironmentFile=-/etc/default/wsdd
+ExecStart=/usr/sbin/wsdd.py $WSDD_OPTIONS
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+User=nobody
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target

@@ -5,3 +5,7 @@
 
 %:
 	dh $@ --with systemd
+
+override_dh_installinit:
+	# Install the /etc/default/openmediavault file.
+	dh_installinit --noscripts --name=wsdd
