@@ -1,5 +1,8 @@
 [Unit]
 Description=Web Services on Devices (WSD) daemon
+; Start after the network has been configured.
+After=network-online.target
+Wants=network-online.target
 ; If the unit bound to is stopped, this unit will be stopped too.
 BindsTo=smbd.service
 
