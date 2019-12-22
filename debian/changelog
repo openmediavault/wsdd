@@ -1,3 +1,9 @@
+wsdd (0.3-4) stable; urgency=low
+
+  * Start daemon after network is up.
+
+ -- Volker Theile <volker.theile@openmediavault.org>  Sun, 22 Dec 2019 10:27:03 +0100
+
 wsdd (0.3-3) stable; urgency=low
 
   * Issue #11: Error in main loop
