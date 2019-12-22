@@ -2,8 +2,8 @@ Source: wsdd
 Section: net
 Priority: optional
 Maintainer: Volker Theile <volker.theile@openmediavault.org>
-Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 12)
+Standards-Version: 4.5.0
 
 Package: wsdd
 Architecture: all
