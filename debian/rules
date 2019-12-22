@@ -4,8 +4,8 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --with systemd
+	dh $@
 
 override_dh_installinit:
-	# Install the /etc/default/openmediavault file.
-	dh_installinit --noscripts --name=wsdd
+	# Install the /etc/default/wsdd file.
+	dh_installinit --noscripts
