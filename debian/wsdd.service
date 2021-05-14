@@ -11,8 +11,7 @@ EnvironmentFile=-/etc/default/wsdd
 ExecStart=/usr/sbin/wsdd.py $WSDD_OPTIONS
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=on-failure
-User=nobody
-Group=nogroup
+DynamicUser=yes
 
 [Install]
 WantedBy=multi-user.target
