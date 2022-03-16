@@ -1,3 +1,9 @@
+wsdd (0.7+gitc87819b) stable; urgency=low
+
+  * Rebase to latest upstream version.
+
+ -- Volker Theile <volker.theile@openmediavault.org>  Wed, 16 Mar 2022 17:25:06 +0100
+
 wsdd (0.6.4+git6d5922e2-1) stable; urgency=low
 
   * Rebase to latest upstream version.

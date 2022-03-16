@@ -7,7 +7,7 @@ Standards-Version: 4.5.0
 
 Package: wsdd
 Architecture: all
-Depends: ${misc:Depends}, samba-common-bin
+Depends: ${misc:Depends}, python3, samba-common-bin
 Description: Web Services on Devices (WSD) daemon
  Web Services on Devices (WSD) is a Microsoft API to simplify programming
  connections to web service enabled devices, such as Printers, Scanners

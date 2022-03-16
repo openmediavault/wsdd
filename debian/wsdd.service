@@ -8,10 +8,12 @@ BindsTo=smbd.service
 
 [Service]
 EnvironmentFile=-/etc/default/wsdd
-ExecStart=/usr/sbin/wsdd.py $WSDD_OPTIONS
+ExecStart=/usr/sbin/wsdd.py --chroot=/run/wsdd $WSDD_OPTIONS
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=on-failure
 DynamicUser=yes
+RuntimeDirectory=wsdd
+AmbientCapabilities=CAP_SYS_CHROOT
 
 [Install]
 WantedBy=multi-user.target
